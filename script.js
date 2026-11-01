@@ -75,25 +75,25 @@ var nonNumericConvertedNumber = Number(nonNumericString);
 // isNaN checks if the value is Not-a-Number (NaN). Returns true if it is NaN, false otherwise.
 // Number.isInteger checks if the value is an integer. Returns true if it is an integer, false otherwise.
 var firstValueResult =
-    "Original: " + firstNumericString +
+    'Original value: "' + firstNumericString + '" ' +
     " &rarr; Converted: " + firstConvertedNumber +
     " &rarr; isNaN: " + Number.isNaN(firstConvertedNumber) +
     " &rarr; isInteger: " + Number.isInteger(firstConvertedNumber);
 
 var secondValueResult =
-    "Original: " + secondNumericString +
+    'Original value: "' + secondNumericString + '" ' +
     " &rarr; Converted: " + secondConvertedNumber +
     " &rarr; isNaN: " + Number.isNaN(secondConvertedNumber) +
     " &rarr; isInteger: " + Number.isInteger(secondConvertedNumber);
 
 var decimalValueResult =
-    "Original: " + decimalString +
+    'Original value: "' + decimalString + '" ' +
     " &rarr; Converted: " + decimalConvertedNumber +
     " &rarr; isNaN: " + Number.isNaN(decimalConvertedNumber) +
     " &rarr; isInteger: " + Number.isInteger(decimalConvertedNumber);
 
 var nonNumericValueResult =
-    "Original: " + nonNumericString +
+    'Original value: "' + nonNumericString + '" ' +
     " &rarr; Converted: " + nonNumericConvertedNumber +
     " &rarr; isNaN: " + Number.isNaN(nonNumericConvertedNumber) +
     " &rarr; isInteger: " + Number.isInteger(nonNumericConvertedNumber);
