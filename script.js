@@ -37,12 +37,23 @@ document.getElementById("dateOutput").textContent = "Today is " + month + "/" + 
 //    - at least 1 decimal string (example: "19.75")
 //    - at least 1 non-numeric string (example: "hello")
 
+var firstNumericString = "82";
+var secondNumericString = "80";
+var decimalString = "13.82";
+var nonNumericString = "Hirbod";
+
 // TODO:
 // 2. For EACH variable:
-//
 //    a. Convert the value using Number()
 //    b. Check if it is NaN using Number.isNaN()
 //    c. Check if it is an integer using Number.isInteger()
+
+// This takes the string and stores the number in a new variable. Keeping the original variable allows displaying both versions later.
+var firstConvertedNumber = Number(firstNumericString);
+var secondConvertedNumber = Number(secondNumericString);
+var decimalConvertedNumber = Number(decimalString);
+var nonNumericConvertedNumber = Number(nonNumericString);
+
 
 // TODO:
 // 3. For EACH value, create a sentence showing:
@@ -54,19 +65,50 @@ document.getElementById("dateOutput").textContent = "Today is " + month + "/" + 
 // Example format (you must create your own variables):
 // "Original: '42' -> Converted: 42 -> isNaN: false -> isInteger: true"
 
+
 // TODO:
 // 4. Combine all your results into ONE string
 //    (you can use + to join multiple strings)
+
+
+// I COMBINED STEPS 2b, 2c, 3 AND 4 INTO THE FOLLOWING CODE:
+// isNaN checks if the value is Not-a-Number (NaN). Returns true if it is NaN, false otherwise.
+// Number.isInteger checks if the value is an integer. Returns true if it is an integer, false otherwise.
+var firstValueResult =
+    "Original: " + firstNumericString +
+    " &rarr; Converted: " + firstConvertedNumber +
+    " &rarr; isNaN: " + Number.isNaN(firstConvertedNumber) +
+    " &rarr; isInteger: " + Number.isInteger(firstConvertedNumber);
+
+var secondValueResult =
+    "Original: " + secondNumericString +
+    " &rarr; Converted: " + secondConvertedNumber +
+    " &rarr; isNaN: " + Number.isNaN(secondConvertedNumber) +
+    " &rarr; isInteger: " + Number.isInteger(secondConvertedNumber);
+
+var decimalValueResult =
+    "Original: " + decimalString +
+    " &rarr; Converted: " + decimalConvertedNumber +
+    " &rarr; isNaN: " + Number.isNaN(decimalConvertedNumber) +
+    " &rarr; isInteger: " + Number.isInteger(decimalConvertedNumber);
+
+var nonNumericValueResult =
+    "Original: " + nonNumericString +
+    " &rarr; Converted: " + nonNumericConvertedNumber +
+    " &rarr; isNaN: " + Number.isNaN(nonNumericConvertedNumber) +
+    " &rarr; isInteger: " + Number.isInteger(nonNumericConvertedNumber);
+
 
 // TODO:
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
 
-
-
-
-
-
+// This will place the combined results of the number conversions into the HTML element with id="numberConversionOutput"
+document.getElementById("numberConversionOutput").innerHTML =
+    "1) " + firstValueResult + "<br><br>" +
+    "2) " + secondValueResult + "<br><br>" +
+    "3) " + decimalValueResult + "<br><br>" +
+    "4) " + nonNumericValueResult;
 
 
 
