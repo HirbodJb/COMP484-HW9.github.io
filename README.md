@@ -14,6 +14,10 @@ https://hirbodjb.github.io/COMP484-HW9.github.io/
 - Uses two `if/else` statements to show whether the average meets a passing threshold of 70 and whether the total is a perfect 300.
 - Uses CSS to display the sections as simple cards and adjust spacing for smaller screens.
 
+## Extra Credit
+
+I completed the last extra credit option: adding light CSS styling to make each section look like a separate card or panel. The `style.css` file gives each section a white background, a subtle border, rounded corners, and comfortable spacing.
+
 ## Built-in Objects and Methods Used
 
 ### Date
