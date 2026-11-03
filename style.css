@@ -48,24 +48,3 @@ h2 {
     background-color: #ffffff;
     overflow-wrap: anywhere;
 }
-
-/* Keep spacing comfortable on smaller screens. */
-@media (max-width: 600px) {
-    body {
-        padding: 28px 16px 40px;
-    }
-
-    h1 {
-        font-size: 1.65rem;
-    }
-
-    h2 {
-        padding: 16px 18px 10px;
-    }
-
-    #dateOutput,
-    #numberConversionOutput,
-    #mathOutput {
-        padding: 8px 18px 18px;
-    }
-}

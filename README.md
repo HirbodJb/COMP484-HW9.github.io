@@ -12,7 +12,7 @@ https://hirbodjb.github.io/COMP484-HW9.github.io/
 - Converts four original strings using `Number()` and displays whether each converted result is `NaN` or an integer.
 - Calculates the total and average of three equally weighted grade scores, formatting the average to two decimal places.
 - Uses two `if/else` statements to show whether the average meets a passing threshold of 70 and whether the total is a perfect 300.
-- Uses CSS to display the sections as simple cards and adjust spacing for smaller screens.
+- Uses CSS to display the sections as simple cards.
 
 ## Extra Credit
 
