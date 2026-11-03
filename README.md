@@ -4,7 +4,7 @@ A webpage that demonstrates JavaScript built-in objects, number calculations, an
 
 ## GitHub Pages
 
-[View the JavaScript Mini Demo](https://hirbodjb.github.io/COMP484-HW9.github.io/)
+https://hirbodjb.github.io/COMP484-HW9.github.io/ 
 
 ## Features
 
@@ -40,7 +40,7 @@ A webpage that demonstrates JavaScript built-in objects, number calculations, an
 These browser features display the results on the page:
 
 - `document.getElementById()` selects an element by its ID.
-- `textContent` sets the date paragraph's text.
+- `textContent` sets the date paragraph's text. Changes the text inside.
 - `innerHTML` inserts the number and math results, including HTML line breaks.
 - Using `innerHTML +=` appends the conditional messages to the existing math results.
 
