@@ -26,7 +26,6 @@ String(...) converts that number into text: "1".
 
 document.getElementById("dateOutput").textContent = "Today is " + month + "/" + day + "/" + year;
 
-
 // ==========================
 // Part 2: Number Conversion
 // ==========================
@@ -54,7 +53,6 @@ var secondConvertedNumber = Number(secondNumericString);
 var decimalConvertedNumber = Number(decimalString);
 var nonNumericConvertedNumber = Number(nonNumericString);
 
-
 // TODO:
 // 3. For EACH value, create a sentence showing:
 //    - original value
@@ -65,13 +63,12 @@ var nonNumericConvertedNumber = Number(nonNumericString);
 // Example format (you must create your own variables):
 // "Original: '42' -> Converted: 42 -> isNaN: false -> isInteger: true"
 
-
 // TODO:
 // 4. Combine all your results into ONE string
 //    (you can use + to join multiple strings)
 
+// ****** I COMBINED STEPS 2b, 2c, 3 AND 4 INTO THE FOLLOWING CODE: *******
 
-// I COMBINED STEPS 2b, 2c, 3 AND 4 INTO THE FOLLOWING CODE:
 // isNaN checks if the value is Not-a-Number (NaN). Returns true if it is NaN, false otherwise.
 // Number.isInteger checks if the value is an integer. Returns true if it is an integer, false otherwise.
 var firstValueResult =
@@ -98,7 +95,6 @@ var nonNumericValueResult =
     " &rarr; isNaN: " + Number.isNaN(nonNumericConvertedNumber) +
     " &rarr; isInteger: " + Number.isInteger(nonNumericConvertedNumber);
 
-
 // TODO:
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
@@ -110,28 +106,37 @@ document.getElementById("numberConversionOutput").innerHTML =
     "3) " + decimalValueResult + "<br><br>" +
     "4) " + nonNumericValueResult;
 
-
-
 // ==========================
 // Part 3: Math & Formatting
 // ==========================
 
-// TODO:
-// 1. Create at least 2-3 numeric variables
-//
-// 2. Perform calculations:
-//    - at least one addition
-//    - at least one other operation (subtract, multiply, or divide)
-//
-// 3. Use at least ONE of the following:
-//    - toFixed()
-//    - toLocaleString()
-//    - Number.parseInt()
-//    - Number.parseFloat()
-//
-// 4. Build a string showing your results
-//
-// 5. Display the results inside the element with id="mathOutput"
+// 1. Create three equally weighted grade scores, each out of 100.
+var firstScore = 82;
+var secondScore = 90;
+var thirdScore = 85;
+
+// 2. Add the scores, then divide by the number of scores to find the average.
+var totalScore = firstScore + secondScore + thirdScore;
+var averageScore = totalScore / 3;
+
+// 3. toFixed(2) rounds the average to two decimal places and returns a string.
+// Keep averageScore as a number for any later calculations or comparisons.
+var formattedAverage = averageScore.toFixed(2);
+
+// 4. Build a string showing the original scores and calculated results.
+var mathResults =
+    "<strong>Grade Score Calculator</strong><br>" +
+    "First score: " + firstScore + " / 100<br>" +
+    "Second score: " + secondScore + " / 100<br>" +
+    "Third score: " + thirdScore + " / 100<br><br>" +
+    "Total score: " + totalScore + " / 300<br>" +
+    "Average score: " + formattedAverage + " / 100";
+
+// 5. Display the results on the page; innerHTML interprets the line breaks.
+document.getElementById("mathOutput").innerHTML = mathResults;
+
+
+
 
 // ==========================
 // Part 4: Conditionals
