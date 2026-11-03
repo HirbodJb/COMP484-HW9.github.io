@@ -130,13 +130,10 @@ var mathResults =
     "Second score: " + secondScore + " / 100<br>" +
     "Third score: " + thirdScore + " / 100<br><br>" +
     "Total score: " + totalScore + " / 300<br>" +
-    "Average score: " + formattedAverage + " / 100";
+    "Average score: " + formattedAverage + " / 100 <br>";
 
 // 5. Display the results on the page; innerHTML interprets the line breaks.
 document.getElementById("mathOutput").innerHTML = mathResults;
-
-
-
 
 // ==========================
 // Part 4: Conditionals
@@ -152,3 +149,21 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 //
 // 2. Display a message on the page based on the condition
 //    (append it to an existing section or create a new message)
+
+/* This if/else statement checks if the average score is greater than or equal to 70 and displays a status message accordingly. */
+if (averageScore >= 70) {
+    document.getElementById("mathOutput").innerHTML +=
+        "<br>Status: Passing <br>";
+} else {
+    document.getElementById("mathOutput").innerHTML +=
+        "<br>Status: Not passing <br>";
+}
+
+/* This if/else statement checks if the total score is a perfect 300 and displays a message accordingly. */
+if (totalScore === 300) {
+    document.getElementById("mathOutput").innerHTML +=
+        "<br>Perfect score! You earned all 300 points. <br>";
+} else {
+    document.getElementById("mathOutput").innerHTML +=
+        "<br>You are " + (300 - totalScore) + " points below a perfect score. <br>";
+}
