@@ -1,7 +1,5 @@
 # JavaScript Mini Demo — COMP 484 Homework 9
 
-A webpage that demonstrates JavaScript built-in objects, number calculations, and conditional messages.
-
 ## GitHub Pages
 
 https://hirbodjb.github.io/COMP484-HW9.github.io/ 
